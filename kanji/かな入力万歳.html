@@ -1,6 +1,21 @@
-かな入力万歳
----
-25em
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>タイピング練習</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+  const TITLE = "かな入力万歳"
+  const START_MSG = 'Enter⏎でスタート'
+　const INPUT_MSG = "かな　確認"
+  const RANDOM = 0
+  const WIDTH = "30em"
+</script>
+
+<!-------+---------+---------+--------->
+<textarea id="txtdata" hidden>
 諸君!
 ローマ字入力民に比べ、
 我がかな入力民は
@@ -36,4 +51,18 @@
 国民よ!嘆きを誇りに変えよ!
 我らこそ選ばれし民であることを忘れるな!
 かな入力こそ、日本語を生かす真の道である!
-かな配列万歳!
+かな配列万歳!</textarea>
+<!-------+---------+---------+--------->
+
+  <div id="title"></div>
+  <div id="result"></div>
+  <div id="target" class="line" 
+    style="text-align:center"></div>
+  <textarea id="editor" class="line" 
+    spellcheck="false" rows="1">
+  </textarea>
+
+  <script src="typing.js" defer></script>
+
+</body>
+</html>
