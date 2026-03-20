@@ -3,38 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<title>タイピング練習</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="index.css">
 </head>
 <body>
-<script>
-	const TITLE = "サンプル"
-	const START_MSG = 'Enter⏎でスタート'
-	const INPUT_MSG = "英数　確認"
-//const INPUT_MSG = "かな　確認"
-//const INPUT_MSG = "かな　たしかめ"
-	const RANDOM = 0
-//const RANDOM = 20
-	const WIDTH = "15em"
-</script>
-
-<!-------+---------+---------+--------->
-<textarea id="txtdata" hidden>
-abcdefg
-hijklmn
-opqrstu
-vwxyz
-</textarea>
-<!-------+---------+---------+--------->
-
-	<div id="title"></div>
-	<div id="result"></div>
-	<div id="target" class="line" 
-		style="text-align:center"></div>
-	<textarea id="editor" class="line" 
-		spellcheck="false" rows="1">
-	</textarea>
-
-	<script src="typing.js" defer></script>
-
+<iframe src="sample.html" width="100%" height="500" frameborder="0"></iframe>
+<div>
+<h2 class="menu-title">問題文メニュー</h2>
+<p><a href="hiragana">ひらがな</a></p>
+<p><a href="random">ランダム</a></p>
+<p><a href="kanji">文章漢字かな混じり</a></p>
+<p><a href="english">英文</a></p>
+</div>
 </body>
 </html>

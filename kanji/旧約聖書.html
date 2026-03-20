@@ -1,10 +1,26 @@
-旧約聖書
----
-40em
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>タイピング練習</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+  const TITLE = "旧約聖書"
+  const START_MSG = 'Enter⏎でスタート'
+  const INPUT_MSG = "かな　確認"
+  const RANDOM = 0
+  const WIDTH = "20em"
+</script>
+
+<!-------+---------+---------+--------->
+<textarea id="txtdata" hidden>
 初めに、神は天と地を創造された。
-地は形なく、空しく、闇が大水の面にあり、
+地は形なく、空しく、
+闇が大水の面にあり、
 神の霊が水の面を動いていた。
-神は『光あれ』と言われた。
+神は「光あれ」と言われた。
 すると光があった。
 主はわたしの羊飼い。
 わたしには乏しいことがない。
@@ -17,3 +33,18 @@
 あなたの神、主である。
 あなたには、わたしのほかに、
 何ものも神としてはならない。
+</textarea>
+<!-------+---------+---------+--------->
+
+  <div id="title"></div>
+  <div id="result"></div>
+  <div id="target" class="line" 
+    style="text-align:center"></div>
+  <textarea id="editor" class="line" 
+    spellcheck="false" rows="1">
+  </textarea>
+
+  <script src="typing.js" defer></script>
+
+</body>
+</html>

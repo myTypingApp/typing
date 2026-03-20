@@ -1,6 +1,21 @@
-ア・バオア・クーにて
----
-25em
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>タイピング練習</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+  const TITLE = "ア・バオア・クーにて"
+  const START_MSG = 'Enter⏎でスタート'
+  const INPUT_MSG = "かな　確認"
+  const RANDOM = 0
+  const WIDTH = "30em"
+</script>
+
+<!-------+---------+---------+--------->
+<textarea id="txtdata" hidden>
 我が忠勇なるジオン軍兵士たちよ。
 今や、地球連邦軍艦隊の半数が、
 我が、ソーラ・レイによって宇宙に消えた。
@@ -26,3 +41,18 @@
 我がジオン国国民は
 立たねばならぬのである！
 ジーク・ジオン！
+</textarea>
+<!-------+---------+---------+--------->
+
+  <div id="title"></div>
+  <div id="result"></div>
+  <div id="target" class="line" 
+    style="text-align:center"></div>
+  <textarea id="editor" class="line" 
+    spellcheck="false" rows="1">
+  </textarea>
+
+  <script src="typing.js" defer></script>
+
+</body>
+</html>

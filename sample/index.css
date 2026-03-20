@@ -1,0 +1,16 @@
+/* メニュー用 div */
+div{
+  width: 240px;              /* サイズ */
+  margin: 20px auto;         /* 中央配置 */
+  padding: 10px;             /* 内側余白 */
+  
+  border: 2px solid #888;    /* 枠線 */
+  border-radius: 8px;        /* 角丸（任意） */
+  background: #f8f8f8;       /* 背景（任意） */
+
+  text-align: left;          /* 中身は左寄せ */
+}
+
+.menu-title{
+  font-size: 1.5em;
+}

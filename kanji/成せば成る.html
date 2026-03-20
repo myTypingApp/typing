@@ -1,8 +1,38 @@
-成せば成る
----
-10em
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>タイピング練習</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+  const TITLE = "成せば成る"
+  const START_MSG = 'Enter⏎でスタート'
+  const INPUT_MSG = "かな　確認"
+  const RANDOM = 0
+  const WIDTH = "15em"
+</script>
+
+<!-------+---------+---------+--------->
+<textarea id="txtdata" hidden>
 為せば成る
 為さねば成らぬ
 何事も
 成らぬは人の
 為さぬなりけり
+</textarea>
+<!-------+---------+---------+--------->
+
+  <div id="title"></div>
+  <div id="result"></div>
+  <div id="target" class="line" 
+    style="text-align:center"></div>
+  <textarea id="editor" class="line" 
+    spellcheck="false" rows="1">
+  </textarea>
+
+  <script src="typing.js" defer></script>
+
+</body>
+</html>

@@ -1,6 +1,21 @@
-const TITLE = "竹取物語"
-const RANDOM = 0
-const WIDTH = "20em"
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>タイピング練習</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+  const TITLE = "竹取物語"
+  const START_MSG = 'Enter⏎でスタート'
+  const INPUT_MSG = "かな　確認"
+  const RANDOM = 0
+  const WIDTH = "20em"
+</script>
+
+<!-------+---------+---------+--------->
+<textarea id="txtdata" hidden>
 いまは昔、
 竹取の翁といふもの有けり。
 野山にまじりて竹を取りつゝ、
@@ -22,3 +37,18 @@ const WIDTH = "20em"
 うつくしき事かぎりなし。
 いとをさなければ
 籠に入れて養ふ
+</textarea>
+<!-------+---------+---------+--------->
+
+  <div id="title"></div>
+  <div id="result"></div>
+  <div id="target" class="line" 
+    style="text-align:center"></div>
+  <textarea id="editor" class="line" 
+    spellcheck="false" rows="1">
+  </textarea>
+
+  <script src="typing.js" defer></script>
+
+</body>
+</html>
