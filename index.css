@@ -1,16 +1,30 @@
-/* メニュー用 div */
-div{
-  width: 240px;              /* サイズ */
-  margin: 20px auto;         /* 中央配置 */
-  padding: 10px;             /* 内側余白 */
-  
-  border: 2px solid #888;    /* 枠線 */
-  border-radius: 8px;        /* 角丸（任意） */
-  background: #f8f8f8;       /* 背景（任意） */
+/* 説明用 div */
+.info-box{
+  width: 320px;
+  margin: 20px auto;
+  padding: 10px;
 
-  text-align: left;          /* 中身は左寄せ */
+  border: 2px solid #888;
+  border-radius: 8px;
+  background: #ffffff;
+
+  text-align: left;
 }
 
+/* メニュー用 div */
+.menu-box{
+  width: 320px;
+  margin: 20px auto;
+  padding: 10px;
+
+  border: 2px solid #444;
+  border-radius: 8px;
+  background: #ffffff;
+
+  text-align: left;
+}
+
+/* タイトル */
 .menu-title{
   font-size: 1.5em;
 }
