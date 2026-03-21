@@ -1,6 +1,21 @@
-元号
-25
-8em
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>タイピング練習</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+  const TITLE = "元号"
+  const START_MSG = 'Enter⏎'
+  const INPUT_MSG = "かな確認"
+  const RANDOM = 20
+  const WIDTH = "5em"
+</script>
+
+<!-------+---------+---------+--------->
+<textarea id="txtdata" hidden>
 大化
 白雉
 朱鳥
@@ -238,3 +253,18 @@
 昭和
 平成
 令和
+</textarea>
+<!-------+---------+---------+--------->
+
+  <div id="title"></div>
+  <div id="result"></div>
+  <div id="target" class="line" 
+    style="text-align:center"></div>
+  <textarea id="editor" class="line" 
+    spellcheck="false" rows="1">
+  </textarea>
+
+  <script src="typing.js" defer></script>
+
+</body>
+</html>

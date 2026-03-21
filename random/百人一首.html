@@ -1,6 +1,21 @@
-百人一首
-25
-36em
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>タイピング練習</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+  const TITLE = "百人一首"
+  const START_MSG = 'Enter⏎でスタート'
+  const INPUT_MSG = "かな　確認"
+  const RANDOM = 25
+  const WIDTH = "36em"
+</script>
+
+<!-------+---------+---------+--------->
+<textarea id="txtdata" hidden>
 秋の田の　かりほの庵の　苫をあらみ　わが衣手は　露にぬれつつ
 春すぎて　夏来にけらし　白妙の　衣ほすてふ　天の香具山
 あしびきの　山鳥の尾の　しだり尾の　ながながし夜を　ひとりかも寝む
@@ -105,3 +120,18 @@
 わが袖は　濡れてひちたれ　しほひにし　かたにはものを　思ふころかな
 ももしきや　古き軒端の　しのぶにも　なほあまりある　昔なりけり
 
+</textarea>
+<!-------+---------+---------+--------->
+
+  <div id="title"></div>
+  <div id="result"></div>
+  <div id="target" class="line" 
+    style="text-align:center"></div>
+  <textarea id="editor" class="line" 
+    spellcheck="false" rows="1">
+  </textarea>
+
+  <script src="typing.js" defer></script>
+
+</body>
+</html>
