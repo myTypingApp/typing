@@ -12,6 +12,7 @@ let qIndex = 0
 let currentWord = ''
 let correct = 0
 let total = 0
+let limit = 0
 
 let typeStarted = false
 let composing = false
@@ -28,7 +29,7 @@ function typed(){
 }
 
 function updateScore(color = ''){
-  resultEl.textContent = `${correct} / ${total}`
+  resultEl.textContent = `${correct} / ${total} / ${limit}`
   resultEl.style.color = color
 }
 
@@ -104,6 +105,7 @@ function nextWord(){
 function startType(){
 	editorEl.placeholder = ""
   schedule = buildSchedule()
+  limit = schedule.length
   qIndex = 0
   correct = 0
   total = 0
@@ -140,6 +142,13 @@ function init(){
   document.documentElement.style.setProperty('--line-width', WIDTH)
 
   loadWords(document.getElementById("txtdata").value)
+  
+  if(RANDOM > 0){
+    limit = Math.min(RANDOM, words.length)
+  }else{
+    limit = words.length
+  }
+  
   updateScore()
   showStart()
 
