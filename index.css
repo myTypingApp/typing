@@ -1,6 +1,6 @@
 /* 説明用 div */
 .info-box{
-  width: 320px;
+  width: 480px;
   margin: 20px auto;
   padding: 10px;
 
@@ -13,7 +13,7 @@
 
 /* メニュー用 div */
 .menu-box{
-  width: 320px;
+  width: 480px;
   margin: 20px auto;
   padding: 10px;
 
