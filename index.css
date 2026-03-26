@@ -24,6 +24,28 @@
   text-align: left;
 }
 
+/* 通常のリンク */
+.menu-box a {
+  color: #6a1b9a; /* 紫系 */
+  text-decoration: none; /* 下線を消す場合 */
+}
+
+/* マウスを乗せたとき */
+.menu-box a:hover {
+  color: #d81b60; /* 少し目立つ色に */
+  text-decoration: underline;
+}
+
+/* クリック中 */
+.menu-box a:active {
+  color: #ff5722;
+}
+
+/* 訪問済み */
+.menu-box a:visited {
+  color: #8e24aa;
+}
+
 /* タイトル */
 .menu-title{
   font-size: 1.5em;
