@@ -32,7 +32,7 @@
 
 /* マウスを乗せたとき */
 .menu-box a:hover {
-  color: #d81b60; /* 少し目立つ色に */
+  color: #00ffff; /* 少し目立つ色に */
   text-decoration: underline;
 }
 
