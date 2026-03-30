@@ -1,41 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <title>タイピング練習</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;url=type.html">
+    <title>リダイレクト中...</title>
+
+    <script>
+        // 2. JavaScriptによる即時リダイレクト
+        window.location.href = "type.html";
+    </script>
 </head>
 <body>
-<script>
-  const TITLE = "いろはうた"
-  const START_MSG = 'Enter⏎でスタート'
-  const INPUT_MSG = "かな　確認"
-  const RANDOM = 0
-  const WIDTH = "15em"
-</script>
-
-<!-------+---------+---------+--------->
-<textarea id="txtdata" hidden>
-いろはにほへと
-ちりぬるを
-わかよたれそ
-つねならむ
-うゐのおくやま
-けふこえて
-あさきゆめみし
-ゑひもせす
-</textarea>
-<!-------+---------+---------+--------->
-
-  <div id="title"></div>
-  <div id="result"></div>
-  <div id="target" class="line" 
-    style="text-align:center"></div>
-  <textarea id="editor" class="line" 
-    spellcheck="false" rows="1">
-  </textarea>
-
-  <script src="typing.js" defer></script>
-
+    <p>自動的に移動します。移動しない場合は<a href="type.html">こちら</a>をクリックしてください。</p>
 </body>
 </html>
