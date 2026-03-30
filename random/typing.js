@@ -1,5 +1,6 @@
 'use strict'
 
+const headEl  = document.getElementById('head')
 const titleEl  = document.getElementById('title')
 const targetEl = document.getElementById('target')
 const editorEl = document.getElementById('editor')
@@ -138,6 +139,7 @@ function loadWords(text){
 }
 
 function init(){
+  headEl.textContent = TITLE
   titleEl.textContent = TITLE
   document.documentElement.style.setProperty('--line-width', WIDTH)
 
